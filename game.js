@@ -16,18 +16,28 @@ function showTextNode(textNodeIndex){
     }
 
     textNode.options.forEach(option => {
-        if (show)
-    })
+        if (showOption(option)){
+            const button = document.createElement('button')
+            button.innerText = option.text
+            button.classList.add('btn')
+            button.addEventListener('click', () => selectOption(option)) 
+            optionButtonsElement.appendChild(button)
+        }   
+    })        
+}  
+ 
+function showOption(option){
+    return option.requiredState == null || option.requiredState(state)
 }
 
-function selectOptions(option) {
-
+function selectOption(option) {
+    
 }
 
 const textNodes = [
     {
         id: 1,
-            text: 'You are about to leave your house and realize you forgot to grab your masks. Do you go back in and grab them or just leave without them?',
+        text: 'You are about to leave your house and realize you forgot to grab your masks. Do you go back in and grab them or just leave without them?',
         options: [
             {
                 text: 'Grab your masks',
