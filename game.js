@@ -15,7 +15,7 @@ function showTextNode(textNodeIndex){
         optionButtonsElement.removeChild(optionButtonsElement.firstChild)
     }
 
-    textNode.options.forEach(option => {
+    textNode.options.forEach(option => { 
         if (showOption(option)){
             const button = document.createElement('button')
             button.innerText = option.text
@@ -24,14 +24,19 @@ function showTextNode(textNodeIndex){
             optionButtonsElement.appendChild(button)
         }   
     })        
-}  
+}    
  
 function showOption(option){
     return option.requiredState == null || option.requiredState(state)
 }
 
-function selectOption(option) {
-    
+function selectOption(option) { 
+    const nextTextNodeId = option.nextText
+    if (nextTextNodeId <= 0) {
+      return startGame()
+    }
+    state = Object.assign(state, option.setState)
+    showTextNode(nextTextNodeId)
 }
 
 const textNodes = [
@@ -51,8 +56,19 @@ const textNodes = [
         ]
     },
     {
-        id: 2
-    }
+        id: 2,
+        text: 'You only have to go do two tasks today. What do your deicde to do first?',
+        options: [
+            {
+                text: 'Go get your groceries for the week',
+                nextText: 3,
+            },
+            {
+                text: 'Go to the bank to the bank to pay your bills.',
+                nextText: 4,
+            }
+        ]
+    },
 ]
 
 startGame()
