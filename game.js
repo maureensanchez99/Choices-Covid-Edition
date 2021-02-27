@@ -66,9 +66,9 @@ const textNodes = [
             {
                 text: 'Go to the bank to the bank to pay your bills.',
                 nextText: 4,
-            }
+            } 
         ]
     },
-]
+]    
 
 startGame()
