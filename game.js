@@ -51,7 +51,7 @@ const textNodes = [
             },
             {
                 text: 'Leave without them',
-                nextText: 2
+                nextText: 2 
             }
         ]
     },
@@ -66,7 +66,7 @@ const textNodes = [
             {
                 text: 'Go to the bank to the bank to pay your bills.',
                 nextText: 4,
-            } 
+            }
         ]
     },
 ]    
