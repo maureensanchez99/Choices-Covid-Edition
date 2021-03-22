@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: Cutive;
 }
+
 /* General styles for pages */
 body{
     padding: 0;
@@ -17,6 +18,17 @@ body{
 /* index.html styles */
 .title-container{
     width: auto;
+}
+
+.btn-wrapper{
+    background: chartreuse;
+    text-align: center;
+}
+
+.play-btn{
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
 }
 
 /* game.html styles */
