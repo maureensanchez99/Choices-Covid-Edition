@@ -69,6 +69,18 @@ const textNodes = [
             }
         ]
     },
+    {
+        id:3,
+        text: '',
+        options: [
+            {
+
+            },
+            {
+                
+            }
+        ]
+    }
 ]    
 
 startGame()
