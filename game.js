@@ -71,13 +71,13 @@ const textNodes = [
     },
     {
         id:3,
-        text: '',
-        options: [
+        text: 'You grabbed  ',
+        options: [  
             {
 
             },
             {
-                
+
             }
         ]
     }

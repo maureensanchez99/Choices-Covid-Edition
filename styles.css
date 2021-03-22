@@ -20,6 +20,13 @@ body{
     width: auto;
 }
 
+.title-image{
+    display: block;
+    margin-top: 0;
+    width: fit-content;
+    height: fit-content;
+}
+
 .btn-wrapper{
     background: chartreuse;
     text-align: center;
@@ -59,4 +66,4 @@ body{
 
 .btn:hover{
     border-color: black;
-}
+} 
