@@ -70,9 +70,9 @@ const textNodes = [
         ]
     },
     {
-        id:3,
-        text: 'You grabbed  ',
-        options: [  
+        id: 3,
+        text: 'You have arrived at the grocery store, grabbed ',
+        options: [   
             {
 
             },

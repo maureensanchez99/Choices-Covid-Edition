@@ -30,6 +30,7 @@ body{
 .btn-wrapper{
     background: chartreuse;
     text-align: center;
+    border-radius: 8px;
 }
 
 .play-btn{
